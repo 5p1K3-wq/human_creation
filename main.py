@@ -1,6 +1,7 @@
 import file_operations
 import random
 from faker import Faker
+from pathlib import Path
 
 
 def replacement_for_runic_font_skill(replace_skill: str):
@@ -49,4 +50,6 @@ def create_profile():
 
 for number in range(1, 11, 1):
     context_profile = create_profile()
+    if not Path.is_dir(Path.cwd() / 'output'):
+        Path.mkdir(Path.cwd() / 'output')
     file_operations.render_template('src/template.svg', 'output/charsheet-{}.svg'.format(number), context_profile)
