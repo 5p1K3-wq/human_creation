@@ -234,11 +234,5 @@ gen
 pyvenv.cfg
 .venv
 pip-selfcheck.json
-output/charsheet-*.svg
 
-Будет удалено .gitignore
-Будет удалено README.md
-Будет удалено file_operations.py
-Будет удалено main.py
-Будет удалено requirements.txt
-Будет удалено src/
+
